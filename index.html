@@ -1,26 +1,215 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>商品価格比較サイト（開発中）</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>商品価格比較サイト（開発中） | 審査用ページ</title>
+  <meta name="description" content="Amazon商品リンクを利用した紹介ページ（開発中）。ユーザーの購入判断を補助する目的で情報を整理して掲載します。" />
+  <link rel="stylesheet" href="./style.css" />
 </head>
+
 <body>
-  <div class="container">
-    <h1>商品価格比較サイト</h1>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="brand-title">商品価格比較サイト（開発中）</div>
+        <div class="brand-sub">Amazonアソシエイト審査用ページ</div>
+      </div>
 
-    <p>
-      本サイトは、Amazonや楽天市場の商品価格を比較し、
-      お得な購入先を分かりやすく紹介することを目的としています。
-    </p>
-
-    <p>
-      現在一部機能は開発中ですが、順次コンテンツを追加予定です。
-    </p>
-
-    <div class="notice">
-      ※本サイトはAmazonアソシエイト・プログラムに参加予定です。
+      <nav class="nav">
+        <a href="#about">概要</a>
+        <a href="#links">商品リンク</a>
+        <a href="#disclosure">広告表示</a>
+        <a href="#contact">お問い合わせ</a>
+      </nav>
     </div>
-  </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Amazon商品を紹介するための審査用ページです</h1>
+      <p class="lead">
+        本ページは、ユーザーの購入判断に役立つように、商品情報（用途・選び方のポイントなど）を簡潔に整理して掲載します。
+        現在は開発中のため、まずは最低限の構成で公開しています。
+      </p>
+
+      <div class="notice">
+        <strong>お知らせ：</strong>
+        本サイトは開発中です。掲載内容は順次追加・更新します。
+      </div>
+    </section>
+
+    <section id="about" class="card">
+      <h2>このサイトの目的</h2>
+      <ul class="list">
+        <li>日用品などの「買う前に迷いやすい商品」について、選び方の基準を分かりやすくまとめる</li>
+        <li>商品ページへ移動できるリンクを掲載し、購入判断をサポートする</li>
+        <li>将来的に価格比較や検索機能などの利便性を高める（開発予定）</li>
+      </ul>
+      <p class="muted">
+        ※価格・在庫・送料などは変動するため、最終的な情報はリンク先（Amazon等）でご確認ください。
+      </p>
+    </section>
+
+    <section id="links" class="card">
+      <h2>業務用 洗濯洗剤（アタック 消臭ストロング ジェル・4kg）</h2>
+      <p class="muted">
+        日常的に使用される家庭用洗濯洗剤の中から、内容量・用途の分かりやすい商品を例として紹介しています。
+        商品の詳細や最新の価格・在庫状況については、リンク先（Amazon.co.jp）をご確認ください。
+      </p>
+
+      <div class="product">
+        <div class="product-head">
+          <div>
+            <div class="tag">おすすめ例</div>
+            <h3 class="product-title">洗剤（例：大容量タイプ／日常使い）</h3>
+          </div>
+        </div>
+
+        <div class="product-body">
+          <div class="product-meta">
+            <p><strong>用途：</strong>毎日の洗濯で使いやすい、標準的な洗剤を想定</p>
+            <p><strong>選び方のポイント：</strong></p>
+            <ul class="list">
+              <li>内容量（コスパ）：1回あたり単価を見て比較</li>
+              <li>香りの有無：無香料・微香・強香を好みで選ぶ</li>
+              <li>液体／ジェルボール：使いやすさと保管性で選ぶ</li>
+            </ul>
+          </div>
+
+          <div class="actions">
+            <a class="btn primary"
+               href="https://amzn.to/3M0twa5"
+               target="_blank">
+              Amazonで商品ページを見る
+            </a>
+
+            <a class="btn"
+               href="https://www.amazon.co.jp/s?k=%E6%B4%97%E5%89%A4+%E5%A4%A7%E5%AE%B9%E9%87%8F"
+               target="_blank" rel="nofollow noopener">
+              Amazonで検索する
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <h2>ＮＥＷクレラップ レギュラー 30cm×50m×5本</h2>
+      <p class="muted">
+        日常生活で使用頻度の高いキッチン用消耗品の中から、
+        家庭で一般的に利用されている食品保存用品を例として紹介しています。
+        商品の仕様や価格、在庫状況については、リンク先（Amazon.co.jp）にて最新情報をご確認ください。
+      </p>
+
+      <div class="product">
+        <div class="product-head">
+          <div>
+            <div class="tag">おすすめ例</div>
+            <h3 class="product-title">食品保存（例：野菜・総菜の作り置き保存）</h3>
+          </div>
+        </div>
+
+        <div class="product-body">
+          <div class="product-meta">
+            <p><strong>用途：</strong>食品の保存・下ごしらえ・日常のキッチン作業</p>
+            <p><strong>選び方のポイント：</strong></p>
+            <ul class="list">
+              <li>サイズ・長さ：家庭の使用頻度に合った容量</li>
+              <li>素材：密着性や耐熱性の違い</li>
+              <li>使いやすさ：切りやすさ・保管のしやすさ</li>
+            </ul>
+          </div>
+
+          <div class="actions">
+            <a class="btn primary"
+              href="https://amzn.to/4kosBN9"
+              target="_blank">
+              Amazonで商品ページを見る
+            </a>
+
+            <a class="btn"
+              href="https://www.amazon.co.jp/s?k=食品保存+ラップ"
+              target="_blank" rel="nofollow noopener">
+              Amazonで検索する
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="disclosure" class="card">
+      <h2>広告表示・アフィリエイトに関する開示</h2>
+      <p>
+        当サイトは、Amazon.co.jpを宣伝しリンクすることによって紹介料を獲得できる
+        <strong>Amazonアソシエイト・プログラム</strong>の参加者です。
+      </p>
+      <p class="muted">
+        当サイトに掲載されているリンクには、アフィリエイトリンク（広告）が含まれる場合があります。
+        商品・サービスの詳細はリンク先の販売元情報をご確認ください。
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>免責事項</h2>
+      <ul class="list">
+        <li>当サイトの情報は可能な限り正確な内容を掲載するよう努めていますが、正確性・完全性を保証するものではありません。</li>
+        <li>価格・在庫・送料・仕様等は予告なく変更される場合があります。最新情報はリンク先でご確認ください。</li>
+        <li>当サイトの情報を利用して生じたいかなる損害についても、当サイトは責任を負いかねます。</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>プライバシーについて</h2>
+      <p class="muted">
+        当サイトは、アクセス解析等のためにCookie等を使用する場合があります。
+        また、Amazonを含む第三者配信事業者がCookieを使用し、ユーザーの興味に応じた広告を表示する場合があります。
+      </p>
+      <p class="muted">
+        当サイトから移動したリンク先（Amazon等）での個人情報の取り扱いについては、リンク先のプライバシーポリシーをご確認ください。
+      </p>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>運営者情報・お問い合わせ</h2>
+      <div class="grid">
+        <div>
+          <h3 class="subhead">運営者</h3>
+          <p>鈴木 祥太</p>
+
+          <h3 class="subhead">連絡先</h3>
+          <p class="muted">
+            連絡先メール：<a href="mailto:xiangtail1@gmail.com">xiangtail1@gmail.com</a>
+          </p>
+        </div>
+
+        <div>
+          <h3 class="subhead">サイトURL</h3>
+          <p class="muted">
+            GitHub Pages：<br />
+            <code>https://ponkiti-hub.github.io/price-compare-site/</code>
+          </p>
+
+          <h3 class="subhead">更新予定</h3>
+          <ul class="list">
+            <li>カテゴリページ追加（例：日用品／育児／家電など）</li>
+            <li>比較ロジックの改善（情報の整理）</li>
+            <li>利便性向上（検索・並び替え等）</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="muted small">© <span id="y"></span> 商品価格比較サイト（開発中）</p>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
